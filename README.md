@@ -21,7 +21,7 @@ Given test above named i_test assertion results are :
 
 
 ## Coverage
-Given test above named spi_wr_test code coverage is :
+Given test above named i_test code coverage is :
 
 ![image](https://github.com/DenizzzGuzell/Basic-Processor-VIP/assets/81621705/df8d9513-3cf7-4b76-95ed-f14ff3547e4d)
 

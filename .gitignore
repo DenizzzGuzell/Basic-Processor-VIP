@@ -56,4 +56,4 @@ Verification/sim/*
 !Verification/sim/cov_spec
 !Verification/sim/design_flist
 !Verification/sim/verif_flist
-!Verification/sim/Coverage-results-ALU
+!Verification/sim/Coverage-results

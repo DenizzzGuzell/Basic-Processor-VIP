@@ -1,0 +1,9 @@
+=N:[UVMSource] Using sources from 'C:\Users\dguzel\AppData\Local\metrics-ca\dsim\20240422.0.0\uvm\1.2'
+=W:[IneffectiveInsideTopDecl]:
+    The following preprocessor directives will have no effect    
+    on the current design element in which they are declared:    
+
+    .\..\utils\timescale.sv:1:1                `timescale    
+    Included from ..\utils\util_pkg.sv:5:14                  
+
+=N:[LibUpdate] Updated library sim.

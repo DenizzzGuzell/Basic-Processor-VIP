@@ -1,0 +1,28 @@
+---
+# Note: The contents of this file are automatically generated.
+# Any changes made by hand may be overwritten.
+version: '0.2'
+work_dir: ./Verification/sim
+design_root_dir: .
+simulations:
+  - name: run
+    options: >-
+      -top sim.hdl_top -top sim.hvl_top -uvm 1.2  -L rtl -L sim +acc+rwcb 
+      -waves waves.vcd  -code-cov a -code-cov-scope-specs cov_spec
+      +UVM_TESTNAME=alu_system_test +UVM_NO_RELNOTES -sv_seed random
+      +UVM_VERBOSITY=UVM_HIGH
+source_files:
+  - language: verilog
+    path: ./design_flist
+    library_name: rtl
+    options: +incdir+../../Design +acc+rwcfb
+    file_list: relative-to-file
+  - language: verilog
+    path: ./verif_flist
+    library_name: sim
+    options: >-
+      -uvm 1.2 +acc+rwb +incdir+../utils+../agent+../env+../sequences+../test
+      -timescale 1ns/1ns
+    file_list: relative-to-file
+library_search_paths:
+  - $STD_LIBS\ieee93
